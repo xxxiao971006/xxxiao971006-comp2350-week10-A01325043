@@ -41,9 +41,9 @@ router.get('/', async (req, res) => {
 		}
 	}
 	catch (ex) {
-	res.render('error', { message: 'Error connecting to MySQL' });
-	console.log("Error connecting to MySQL");
-	console.log(ex);
+		res.render('error', { message: 'Error connecting to MySQL' });
+		console.log("Error connecting to MySQL");
+		console.log(ex);
 	}
 });
 
