@@ -10,8 +10,8 @@ const userModel = sequelize.define('web_user',
         first_name: { type: Sequelize.STRING, allowNull: false },
         last_name: { type: Sequelize.STRING, allowNull: false },
         email: { type: Sequelize.STRING, allowNull: false },
+        password_salt: { type: Sequelize.STRING, allowNull: false },
         password_hash: { type: Sequelize.STRING, allowNull: true },
-        password_salt: { type: Sequelize.STRING, allowNull: false }
     },
     {
         tableName: 'web_user',
