@@ -9,8 +9,7 @@ global.include = function(file) {
 
 
 const express = require('express');
-// const database = include('databaseConnection');
-const database = include('databaseConnectionString');
+const database = include('databaseConnection');
 const router = include('routes/router');
 
 const port = process.env.PORT || 3000;
