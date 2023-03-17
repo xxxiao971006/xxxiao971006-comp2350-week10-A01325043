@@ -17,12 +17,11 @@
 						<table class="table is-bordered is-hoverable is-striped is-narrow">
 							<thead>
 							<tr>
-								<th> # </th>
 								<th> Firstname </th>
 								<th> Lastname </th>
 								<th> Email </th>
 								<th> &nbsp; </th>
-																<th> &nbsp; </th>
+								<th> &nbsp; </th>
 
 							</tr>
 							</thead>
@@ -54,6 +53,44 @@
 					<% } %>
 				</div>
 			</div>
+
+				<form action="/addUser" method="post">
+					<div class="field is-horizontal">
+						<div class="field-label is-normal">
+							<label class="label">Add New User</label>
+						</div>
+						<div class="field-body">
+							<div class="field">
+								<p class="control is-expanded">
+									<input name="first_name" class="input" type="text" placeholder="First Name">
+								</p>
+							</div>
+							<div class="field">
+								<p class="control is-expanded">
+									<input name="last_name" class="input" type="text" placeholder="Last Name">
+								</p>
+							</div>
+							<div class="field">
+								<p class="control is-expanded">
+									<input name="email" class="input" type="email" placeholder="Email">
+								</p>
+							</div>
+							<div class="field">
+								<p class="control is-expanded">
+									<input name="password" class="input" type="password" placeholder="Password">
+								</p>
+							</div>
+							<div class="field">
+								<button type="submit" class="button is-link">
+									<span>Add</span>
+									<span class="icon is-small">
+										<i class="fas fa-user-plus"></i>
+									</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</form>
 		</section>
 	</body>
 </html>
